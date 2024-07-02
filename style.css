@@ -1,0 +1,820 @@
+/* umumiy stillar */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.kontener{
+    width: 1700px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear:both;
+}
+
+/* header section styles */
+.header{
+    overflow: hidden;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 6px 6px 6px 2px rgb(194, 183, 183) ;
+    z-index: 12;
+    padding-bottom: 20px;
+}
+
+.header .kontener{
+    align-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 23px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+
+.navigation ul span{
+
+    margin-right: 100px;
+    padding-right: 90px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, rgb(0, 0, 0) ,  red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation-name: title;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+.header-logo img{
+    border-radius: 10px;
+    width: 150px;
+    margin-top: -30px;
+}
+
+.navigation ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul li{
+    padding-inline: 15px;
+    list-style: none;
+}
+
+.navigation ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.navigation ul li a:hover{
+    color: green;
+}
+
+/* home section styles */
+#home{
+    height: 1700px;
+    background: url(home\ img.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: -800px;
+}
+
+#home h1{
+    font-size: 80px;
+    padding-top: 1000px;
+    background: linear-gradient(90deg, rgb(0, 4, 4) 92% , rgb(225, 36, 7) 8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation-name: title;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+@keyframes title {
+    0%{
+        background-size: 0%;
+    }
+    100%{
+        color: blue !important;
+        background-size: 100%;
+    }
+}
+    /* info section style */
+    #info{
+        text-align: center;
+        padding-top: 100px;
+        background: url(banner.jpg) no-repeat;
+        background-size: cover;
+        padding-bottom: 70px;
+    }
+
+    #info h1{
+        color: navy;
+        letter-spacing: 1.7px;
+        font-size: 43px;
+    }
+
+    .info-cards{
+        padding-top: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .info-card {
+        text-align: center;
+        color: black;
+        transition: all 0.3s linear;
+        background-color: rgba(195, 186, 186, 0.111);
+    }
+
+    .info-card h3{
+        font-size: 25px;
+        text-transform: capitalize;
+        color: navy;
+    }
+
+    .info-card-title {
+        color: black;
+    }
+    .info-card-description{
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        line-height: 32px;
+        font-size: 23px;
+    }
+
+    .info-card:hover{
+        box-shadow: 6px 6px 6px 9px rgb(165, 158, 158);
+    }
+
+    /*  about us section styles */
+    #about{
+        padding-top: 100px;
+        padding-top: 100px;
+        background: url(banner.jpg) no-repeat;
+        background-size: cover;
+        padding-bottom: 70px;
+    }
+
+    #about .kontener{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-info{
+        padding-top: 50px;
+        width: 45%;
+        margin-right: 4%
+    }
+
+    .about-title{
+        text-align: center;
+        color: navy;
+        letter-spacing: 1.7px;
+        font-size: 43px;
+    }
+
+    .about-info h4{
+        font-size: 28px;
+        letter-spacing: 2px;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    .about-info h2{
+        font-size: 40px;
+        padding-top: 30px;
+        margin-bottom: 20px;
+        margin: 0;
+        color: navy;
+    }
+
+    .about-info p{
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 36px;
+        color: #797977;
+    }
+
+    .button{
+        height: 45px;
+        width: 180px;
+        border-radius: 30px;
+        border: none;
+        background-color: navy;
+        text-transform: capitalize;
+        font-size: 22px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .button a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .button:hover{
+        background-color: rgb(202, 114, 6);
+    }
+
+    .about-img {
+        padding-top: 50px;
+        width: 50%;
+    }
+
+    .about-img img{
+        width: 540px;
+        border-radius: 10px;
+    }
+    
+    /* service section styles */
+    #service{
+        padding-top: 100px;
+        padding-top: 100px;
+        background: url(banner.jpg) no-repeat;
+        background-size: cover;
+        padding-bottom: 70px;
+        text-align: center;
+    }
+
+    .service-title{
+        text-align: center;
+        color: navy;
+        letter-spacing: 1.7px;
+        text-transform: capitalize;
+        font-size: 43px;
+    }
+
+    .service-cards{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .service-card{
+        transition: all 0.2s linear;
+        background-color: white;
+        margin-right: 40px;
+        padding-bottom: 40px;
+        box-shadow: 7px 2px 7px 2px rgb(163, 158, 158);
+    }
+
+    .service-card:hover{
+        box-shadow: none;
+    }
+
+    .service-card img{
+        width: 95%;
+        height: 500px;
+    }
+
+    .service-card h2{
+        display: inline-block;
+        text-align: center;
+        color: navy;
+        letter-spacing: 1.7px;
+        text-transform: capitalize;
+        font-size: 23px;
+        border-bottom: 2px solid;
+        margin-bottom: 0;
+    }
+
+    .service-card  h3{
+        text-align: center;
+        color: rgb(0, 0, 0);
+        letter-spacing: 1.7px;
+        text-transform: capitalize;
+        font-size: 23px;
+    }
+
+    .service-card  h4{
+        text-align: center;
+        color: rgb(0, 0, 0);
+        letter-spacing: 1.7px;
+        text-transform: capitalize;
+        font-size: 19px;
+        color: #797979;
+        width: 90%;
+        margin: 2%;
+        line-height: 30px;
+    }
+    .service-card p{
+        font-size: 30px;
+        letter-spacing: 1.6px;
+    }
+    
+/* Ziyoratchilar Rasmlari start */
+
+.images {
+    width: 100%;
+}
+
+.yozuv {
+    padding: 0 20px;
+}
+
+.yozuv-kichik {
+    padding-top: 100px;
+    text-align: center;
+    color: rgb(2, 0, 31);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.yozuv-kichik p{
+    text-align: center;
+    color: rgb(2, 0, 31);
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.yozuv-katta {
+    text-align: center;
+    color: rgb(2, 2, 111);
+    font-size: 20px;
+}
+
+.section1{
+    margin: 10px;
+    width: 300px;
+}
+
+.section2{
+    margin: 10px;
+    width: 300px;
+}
+
+.section3{
+    margin: 10px;
+    width: 300px;
+}
+
+.section4{
+    margin: 10px;
+    width: 300px;
+}
+
+.section5{
+    margin: 10px;
+    width: 300px;
+}
+
+.section6{
+    margin: 10px;
+    width: 300px;
+}
+
+.section7{
+    margin: 10px;
+    width: 300px;
+}
+
+.section8{
+    margin: 10px;
+    width: 300px;
+}
+
+.section9{
+    margin: 10px;
+    width: 300px;
+}
+.rasm1 {
+    text-align: center;
+    width: 25%;
+    height: 230px;
+    color: #fff;
+    z-index: 5;
+    position: absolute;
+    padding: 2px 5px;
+     margin: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    line-height: 34PX;
+    align-self: auto;
+    border-radius: 5px;
+    padding-top: 140px;
+    visibility: hidden;
+    transition: all 0.1s ease-in-out;
+}
+
+.img1 {
+    border-radius: 10px;
+    height: 400px;
+    width: 100%;
+}
+
+.rasm-1:hover .rasm1{
+    visibility: visible;
+}
+
+.Abdusamad>section {
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+}
+
+#clent{
+    background: url(banner.jpg) no-repeat;
+    background-size: cover;
+    height: 1499px;
+}
+
+/* Ziyoratchilar rasmlari END */
+
+/* health sectio9n styles */
+#yordam{
+    padding-top: 100px;
+    background: url(banner.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#yordam h1{
+    text-align: center;
+    color: navy;
+    letter-spacing: 1.7px;
+    text-transform: capitalize;
+    font-size: 29px;
+    line-height: 40px;
+    margin-bottom: 100px;
+}
+
+.yordam-card{
+    margin-top: 50px;
+    display: inline-block;
+    width: 15%;
+    margin-right: 6%;
+    margin-left: 3%;
+    text-align: center;
+}
+
+.yordam-card img{
+    width: 40%;
+}
+
+.yordam-card {
+    margin-top: 0;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 40px;
+    background-color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-shadow: 2px 12px 12px 12px rgb(157, 149, 149);
+}
+
+/* video */
+#video{
+    padding-top: 200px;
+    background: url(banner.jpg) no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+#video iframe{
+    margin-right: 200px;
+    margin-left: 120px;
+}
+#video h1{
+    font-size: 37px;
+    text-align: center;
+    margin-bottom: 100px;
+    line-height: 50px;
+    color: rgb(3, 3, 52);
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: #0c035e;
+    padding: 100px 10%;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+}
+
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    background-color: #27c0ac;
+    height: 2px;
+    width: 40px;
+}
+
+ul li:not(:last-child){
+    margin-bottom: 8px;
+}
+
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: #bdb6b6;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul li a:hover{
+    color: white;
+    padding-left: 2px;
+}
+
+.links a{
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    color: white;
+    background-color: rgba(3, 109, 43, 0.8);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.links a:hover{
+    color: #4d4f55;
+    background-color: white;
+}
+ 
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.iframe {
+    width: 100%;
+    height: 700px;
+}
+
+p {
+    color: #ffffff; 
+    font-size: 18px;
+}
+
+/* responsive web design */
+@media only screen and (max-width: 320px){
+    .kontener{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .navigation{
+        display: none;
+    }
+
+    .header-logo img{
+        z-index: 122;
+        width: 200px;
+        position: absolute;
+        left: 70px;
+    }
+    .header{
+        width: 390px;
+    }
+
+    #home .home-title{
+        font-size: 30px;
+        color: white;
+    }
+
+    #home{
+        text-align: center;
+        height: 1300px;
+        background: linear-gradient(90deg, rgb(229, 251, 251) 92% , rgb(225, 36, 7) 8%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* kerakli jihozlar */
+    #info{
+        background: none;
+        position: relative;
+    }
+    #info h1{
+        font-size: 23px;
+        margin-top: 10px;
+    }
+    .info-card{
+        top: 100px;
+        position: absolute;
+    }
+    .info-card.a{
+        height: 300px;
+        top: 870px;
+    }
+
+    .info-card.s{
+        top: 250px;
+        height: 300px;
+    }
+
+    .info-card.d{
+        top: 560px;
+        height: 300px;
+    }
+    .info-card img{
+        width: 70px;
+    }
+
+    /* about section rwd */
+    #about{
+        background: none;
+        margin-top: 840px;
+        position: relative;
+    }
+
+    #about .about-title{
+        font-size: 30px;
+    }
+
+    .about-info{
+        margin-top: 10px;
+        position: absolute;
+        top: 130px;
+        width: 300px;
+        text-align: justify;
+    }
+
+    .about-img{
+        display: none;
+    }
+
+    /* servise section rwd */
+    #service{
+        background: none;
+        margin-top: 420px;
+        position: relative;
+    }
+
+    .service-title{
+        font-size: 30px;
+    }
+    .service-card{
+        position: absolute;
+        top: 260px;
+        width: 320px;
+    }
+    .service-card.z{
+        position: absolute;
+        top: 1060px;
+    }
+    .service-card img{
+        height: 300px;
+        border-radius: 5px;
+    }
+
+    /* clent */
+    #clent{
+        position: relative;
+        margin-top: 1450px;
+        background: none;
+    }
+
+    .section1.q{
+        top: 300px;
+        margin-top: 10px;
+        display: inline-block;
+        width: 320px;
+        position: absolute;
+        height: 300px;
+    }
+    #clent .section2{
+        top: 720px;
+        display: inline-block;
+        width: 320px;
+        position: absolute;
+        height: 300px;
+    }
+
+    #clent .section3{
+        top: 1140px;
+        display: inline-block;
+        width: 320px;
+        position: absolute;
+        height: 300px;
+    }
+    #clent .section4{
+        top: 1570px;
+        display: inline-block;
+        width: 320px;
+        position: absolute;
+        height: 300px;
+    }
+
+    #clent .section5{
+        top: 2000px;
+        display: inline-block;
+        width: 320px;
+        position: absolute;
+        height: 300px;
+    }
+    .rasm-1{
+        position: relative;
+    }
+
+    .rasm-1 .rasm1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 230px;
+    }
+    .Abdusamad .section6, .section7, .section8, .section9{
+        display: none;
+    }
+
+    /* yordam section rwd */
+    #yordam{
+        background: none;
+        position: relative;
+        margin-top: 900px;
+    }
+
+    #yordam .yordam-card{
+        width: 320px;
+        margin-top: 40px;
+    }
+
+    /* vodeo section rwd */
+    #video{
+        background: none;
+    }
+
+    #video h1{
+        font-size: 30px;
+    }
+
+    #video iframe{
+        width: 300px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+
+    /* footer section rwd */
+    .iframe{
+        width: 310px;
+        margin: 0 auto;
+        height: 400px;
+        margin-bottom: 60px;
+    }
+
+    #contact .footer-col{
+        width: 300px;
+    }
+}
+

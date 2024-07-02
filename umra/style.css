@@ -1,0 +1,101 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+}
+
+.images {
+      width: 100%;
+}
+
+.yozuv {
+      padding: 0 20px;
+}
+
+.yozuv-kichik {
+      text-align: center;
+      color: black;
+      font-size: 15px;
+}
+
+.yozuv-katta {
+      text-align: center;
+      color: #509f40;
+      font-size: 20px;
+}
+
+.section1{
+      margin: 10px;
+      width: 300px;
+}
+
+.section2{
+      margin: 10px;
+      width: 300px;
+}
+
+.section3{
+      margin: 10px;
+      width: 300px;
+}
+
+.section4{
+      margin: 10px;
+      width: 300px;
+}
+
+.section5{
+      margin: 10px;
+      width: 300px;
+}
+
+.section6{
+      margin: 10px;
+      width: 300px;
+}
+
+.section7{
+      margin: 10px;
+      width: 300px;
+}
+
+.section8{
+      margin: 10px;
+      width: 300px;
+}
+
+.section9{
+      margin: 10px;
+      width: 300px;
+}
+.rasm1 {
+      text-align: center;
+      width: 27%;
+      height: 170px;
+      color: #fff;
+      z-index: 5;
+      position: absolute;
+      padding: 2px 5px;
+       margin: 15px;
+      background-color: rgba(0, 0, 0, 0.3);
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      align-self: auto;
+      border-radius: 5px;
+      padding-top: 40px;
+}
+
+.img1 {
+      border-radius: 10px;
+      height: 200px;
+      width: 100%;
+}
+
+.Abdusamad>section {
+      width: 30%;
+      float: left;
+      margin-right: 2%;
+}
